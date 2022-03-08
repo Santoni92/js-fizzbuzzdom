@@ -40,7 +40,7 @@
         {
             const element = '<div class="square">FizzBuzz</div> ';  //elemento div interno 
             divContainer.innerHTML += element;  //aggiungo all'interno dell'elemento(tag) div container l'html del div che voglio inserire all'interno
-            element.className += element.classList + " flex";
+            //element.className = element.classList + " flex";
         }else if( i % 3 == 0)
                 {
                     const element = '<div class="square">Fizz</div> ';
@@ -54,4 +54,6 @@
                     divContainer.innerHTML += element;
                  }
     }
+    //milestone 3
+
 
