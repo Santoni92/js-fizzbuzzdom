@@ -10,6 +10,7 @@
   border: 1px dashed red;
   display: flex;
   flex-wrap: wrap;
+  /*gap: 5px 5px;*/ /* row-gap column gap */
 }
 
 .square {
@@ -21,10 +22,5 @@
   border: 1px dashed green;
   vertical-align: middle;
   line-height: 50px;
-  flex-grow: 1;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
+  /*flex-grow: 1;*/
 }
