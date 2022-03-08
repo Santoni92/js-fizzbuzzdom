@@ -15,7 +15,7 @@
     //RIPETI
 
 
-    console.log('JS OK!');
+    console.log('JS OK!');  //verifico che il file javascript sia ben collegato all'html
     //milestone 1
     for(let i = 1;i <= 100;i++)
     {
@@ -32,13 +32,15 @@
         console.log(i);
        }
     }
+    
     //milestone 2
-    const divContainer = document.querySelector('#container');
+    const divContainer = document.querySelector('#container');  //mi seleziono il div che fa da  contenitore
     for(let i = 1;i <= 100;i++)
     {
         if(i % 3 == 0 && i % 5 == 0)
         {
-            const element = `<div class="square" id="square-${i}">FizzBuzz</div> `;  //elemento div interno 
+            const element = `<div class="square" id="square-${i}">FizzBuzz</div> `;  //elemento div interno(stringa che mi rappresenta il codice html del div interno)
+            /*l'id dato ai div interni mi serve per poterli selezionare nel successsivo for così da assegnargli uno stile*/ 
             divContainer.innerHTML += element;  //aggiungo all'interno dell'elemento(tag) div container l'html del div che voglio inserire all'interno
             //element.className = element.classList + " flex";
         }else if( i % 3 == 0)
@@ -59,8 +61,8 @@
     for(let i = 1;i <= 100; i++)
     {
         if(i % 3 == 0 && i % 5 == 0){
-            const element = document.getElementById('square-' + i);
-            element.style.background = "white";
+            const element = document.getElementById('square-' + i); //seleziono l'elemento a cui voglio assegnare uno stile
+            element.style.background = "white"; //assegno lo stile
         }else if(i % 3 == 0)
         {
             const element = document.getElementById('square-' + i);
@@ -73,10 +75,34 @@
             element.style.background = "blue";
         }
     }
+
     
-    
-    
-    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
     
     
