@@ -16,6 +16,7 @@
 
 
     console.log('JS OK!');
+    //milestone 1
     for(let i = 1;i <= 100;i++)
     {
        if(i % 3 == 0 && i % 5 == 0)
@@ -30,5 +31,25 @@
        }else{
         console.log(i);
        }
-         
+    }
+    //milestone 2
+    const divContainer = document.querySelector('#container');
+    for(let i = 1;i <= 100;i++)
+    {
+        if(i % 3 == 0 && i % 5 == 0)
+        {
+            const element = '<div class="square">FizzBuzz</div> ';
+            divContainer.innerHTML += element;
+        }else if( i % 3 == 0)
+                {
+                    const element = '<div class="square">Fizz</div> ';
+                    divContainer.innerHTML += element;
+                 }else if(i % 5 == 0)
+                 {
+                    const element = '<div class="square">Buzz</div> ';
+                    divContainer.innerHTML += element;
+                 }else{
+                    const element = '<div class="square">${i}</div> ';
+                    divContainer.innerHTML += element;
+                 }
     }
