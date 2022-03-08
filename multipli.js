@@ -49,7 +49,7 @@
                     const element = '<div class="square">Buzz</div> ';
                     divContainer.innerHTML += element;
                  }else{
-                    const element = '<div class="square">${i}</div> ';
+                    const element = `<div class="square">${i}</div>`;
                     divContainer.innerHTML += element;
                  }
     }
