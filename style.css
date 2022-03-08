@@ -20,4 +20,5 @@
   border: 1px dashed green;
   vertical-align: middle;
   line-height: 50px;
+  flex-grow: 1;
 }

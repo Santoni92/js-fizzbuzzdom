@@ -38,8 +38,8 @@
     {
         if(i % 3 == 0 && i % 5 == 0)
         {
-            const element = '<div class="square">FizzBuzz</div> ';
-            divContainer.innerHTML += element;
+            const element = '<div class="square">FizzBuzz</div> ';  //elemento div interno 
+            divContainer.innerHTML += element;  //aggiungo all'interno dell'elemento(tag) div container l'html del div che voglio inserire all'interno
         }else if( i % 3 == 0)
                 {
                     const element = '<div class="square">Fizz</div> ';
@@ -53,3 +53,4 @@
                     divContainer.innerHTML += element;
                  }
     }
+
