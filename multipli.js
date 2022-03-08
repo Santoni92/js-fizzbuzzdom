@@ -41,17 +41,17 @@
             const element = '<div class="square">FizzBuzz</div> ';  //elemento div interno 
             divContainer.innerHTML += element;  //aggiungo all'interno dell'elemento(tag) div container l'html del div che voglio inserire all'interno
             //element.className = element.classList + " flex";
-            //element.style.bacgroundColor = 'white';
+            element.style.backgroundColor = 'white';
         }else if( i % 3 == 0)
                 {
                     const element = '<div class="square">Fizz</div> ';
                     divContainer.innerHTML += element;
-                   //element.style.bacgroundColor = 'green';
+                   element.style.backgroundColor = 'green';
                  }else if(i % 5 == 0)
                  {
                     const element = '<div class="square">Buzz</div> ';
                     divContainer.innerHTML += element;
-                    //element.style.bacgroundColor = 'red';
+                    element.style.backgroundColor = 'red';
                  }else{
                     const element = `<div class="square">${i}</div>`;
                     divContainer.innerHTML += element;
