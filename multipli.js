@@ -38,27 +38,58 @@
     {
         if(i % 3 == 0 && i % 5 == 0)
         {
-            const element = '<div class="square">FizzBuzz</div> ';  //elemento div interno 
+            const element = `<div class="square" id="square-${i}">FizzBuzz</div> `;  //elemento div interno 
             divContainer.innerHTML += element;  //aggiungo all'interno dell'elemento(tag) div container l'html del div che voglio inserire all'interno
             //element.className = element.classList + " flex";
-            element.style.backgroundColor = 'white';
         }else if( i % 3 == 0)
                 {
-                    const element = '<div class="square">Fizz</div> ';
+                    const element = `<div class="square" id="square-${i}">Fizz</div> `;
                     divContainer.innerHTML += element;
-                   element.style.backgroundColor = 'green';
                  }else if(i % 5 == 0)
                  {
-                    const element = '<div class="square">Buzz</div> ';
+                    const element = `<div class="square" id="square-${i}">Buzz</div>` ;
                     divContainer.innerHTML += element;
-                    element.style.backgroundColor = 'red';
                  }else{
-                    const element = `<div class="square">${i}</div>`;
+                    const element = `<div class="square"id="square-${i}" >${i}</div>`;
                     divContainer.innerHTML += element;
-                    element.style.backgroundColor = "red";
                 }
                 
     }
     //milestone 3
+    for(let i = 1;i <= 100; i++)
+    {
+        if(i % 3 == 0 && i % 5 == 0){
+            const element = document.getElementById('square-' + i);
+            element.style.background = "white";
+        }else if(i % 3 == 0)
+        {
+            const element = document.getElementById('square-' + i);
+            element.style.background = "red";
+        }else if(i % 5 == 0){
+            const element = document.getElementById('square-' + i);
+            element.style.background = "green";
+        }else{
+            const element = document.getElementById('square-' + i);
+            element.style.background = "blue";
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
